@@ -26,7 +26,7 @@ export function NewTransactionModal( {isOpen, onRequestClose}:NewTransactionModa
              className="react-modal-close"
       >
          <img src={closeImg} alt="Fechar modal"/>
-      </button>
+      </button> 
 
       <Container>
         <h2>Cadastrar</h2>
@@ -40,6 +40,7 @@ export function NewTransactionModal( {isOpen, onRequestClose}:NewTransactionModa
                type="button"
                onClick={() =>{ setType('deposit') }}
                isActive={type ==='deposit'}
+               activeColor="green"
              >
               <img src={incomeImg} alt="Entrada"/>
 
@@ -51,6 +52,7 @@ export function NewTransactionModal( {isOpen, onRequestClose}:NewTransactionModa
                 className=""
                 onClick={() => { setType('withdraw') }}
                 isActive={type ==='withdraw'}
+                activeColor="red"
             >
               <img src={outcomeImg} alt=""/>
 
