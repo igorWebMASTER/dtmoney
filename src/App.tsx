@@ -38,8 +38,6 @@ export function App() {
     setIsNewTransactionModalOpen(false);
   }
 
-
-
   return (
     <>
      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}  />
