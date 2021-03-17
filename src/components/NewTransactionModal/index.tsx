@@ -31,6 +31,12 @@ export function NewTransactionModal( {isOpen, onRequestClose}:NewTransactionModa
       category,
       type
     })
+
+    setTitle('');
+    setAmount(0);
+    setTitle('');
+    setCategory('');
+    onRequestClose();
   }
 
   return (
