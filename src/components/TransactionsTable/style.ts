@@ -23,6 +23,10 @@ export const Container  = styled.div`
       font-weight:normal;
 
       border-radius:0.25rem;
+
+      & + td {
+        color: var(--text-title);
+      } 
      
       &:first-child{
       color:var(--text-title);
